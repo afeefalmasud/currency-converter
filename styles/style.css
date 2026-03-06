@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #020617;
+    color: #F1F5F9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #1E293B;
+    padding: 50px 60px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro h2{
+    font-size: 44px;
+    font-weight: bold;
+    color: #F8FAFC;
+    margin-bottom: 20px;
+}
+.intro p, .from p, .to p{
+    font-size: 24px;
+    font-weight: medium;
+    color: #e7ebfa;
+    margin-bottom: 10px;
+}
+.drop-down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    max-width: 400px;
+    background-color: #0F172A;
+    color: #94A3B8;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: medium;
+}
+.drop-down i{
+    color: #58ff95;
+    font-size: 24px;
+    margin-top: 10%;
+}
+.from-content,.to-content{
+    background-color: #0F172A;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.from-content img,.to-content img{
+    width: 50px;
+}
+select{
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #1E293B;
+    color: #94A3B8;
+    font-weight: medium;
+    padding: 8px;
+}
+.msg p{
+    color: #58ff95;
+    font-size: 24px;
+    font-weight: medium;
+}
+button{
+    background-color: #22C55E;
+    color: #F1F5F9;
+    font-size: 18px;
+    font-weight: medium;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #16A34A;
+}
+
+@media (min-width: 300px) and (max-width: 767px){
+    .drop-down{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px;
+        border-radius: 15px;
+    }
+    .intro{
+        align-items: center;
+        text-align: center;
+    }
+    .drop-down i{
+        margin-top: 30px;
+        transform: rotate(90deg);
+    }
+    .intro h2{
+        font-size: 30px;
+    }
+    .intro p, .from p, .to p{
+        font-size: 20px;
+    }
+    .msg p{
+        font-size: 20px;
+    }
+}
